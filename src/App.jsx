@@ -1,4 +1,15 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true,     // only animate once
+    });
+  }, []);
+
   return (
     <>
       <header
@@ -1064,8 +1075,6 @@ function App() {
       >
         <i className="bi bi-arrow-up-short" />
       </a>
-      {/* Preloader */}
-      <div id="preloader" />
     </>
   )
 }
