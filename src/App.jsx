@@ -935,19 +935,16 @@ function App() {
       <footer id="footer" className="footer position-relative light-background">
         <div className="container">
           <div className="social-links d-flex justify-content-center">
-            <a href="">
+            <a href="https://x.com/juswant2beyours">
               <i className="bi bi-twitter-x" />
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/juswanabeyours">
               <i className="bi bi-facebook" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/joshptn">
               <i className="bi bi-instagram" />
             </a>
-            <a href="">
-              <i className="bi bi-skype" />
-            </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/joshua-patenia-714727346">
               <i className="bi bi-linkedin" />
             </a>
           </div>
