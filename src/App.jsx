@@ -859,7 +859,7 @@ function App() {
               </div>
               <div className="col-lg-8">
                 <form
-                  action="https://formspree.io/f/xzzjybaa"
+                  action="https://formspree.io/f/movkywyz"
                   method="post"
                   className="php-email-form"
                   data-aos="fade-up"
@@ -880,7 +880,7 @@ function App() {
                     </div>
                     <div className="col-md-6 ">
                       <label className="title-name">
-                        Content
+                        Email
                       </label>
                       <input
                         type="email"
