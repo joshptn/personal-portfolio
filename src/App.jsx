@@ -349,10 +349,10 @@ function App() {
           <div className="container section-title" data-aos="fade-up">
             <h2>Resume</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-              aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-              quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-              fugiat sit in iste officiis commodi quidem hic quas.
+              I’m an aspiring Cloud Developer who believes every experience builds a stronger foundation. 
+              From hands-on work in service and engineering environments, 
+              I’ve developed perseverance, teamwork, and adaptability.
+               Explore my resume to see how dedication and growth shape my path in technology.
             </p>
           </div>
           {/* End Section Title */}
@@ -361,47 +361,47 @@ function App() {
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                 <h3 className="resume-title">Sumary</h3>
                 <div className="resume-item pb-0">
-                  <h4>Brandon Johnson</h4>
+                  <h4>Joshua Pateña</h4>
                   <p>
                     <em>
-                      Innovative and deadline-driven Graphic Designer with 3+ years
-                      of experience designing and developing user-centered
-                      digital/print marketing material from initial concept to
-                      final, polished deliverable.
+                      I hold an Associate Degree in Computer Technology and am currently pursuing my Bachelor’s in Information Systems. 
+                      My passion lies in building smart systems, sparking innovation, and helping businesses grow with tech-driven solutions. 
+                      I blend a business-minded approach with a high-value mindset, 
+                      because technology isn’t just about lines of code, it’s about creating real-world impact.
                     </em>
                   </p>
                   <ul>
-                    <li>Portland par 127,Orlando, FL</li>
-                    <li>(123) 456-7891</li>
-                    <li>alice.barkley@example.com</li>
+                    <li>Apalit, Pampanga</li>
+                    <li> +63 935 636 3607</li>
+                    <li>jashuapatenia15@gmail.com</li>
                   </ul>
                 </div>
                 {/* Edn Resume Item */}
                 <h3 className="resume-title">Education</h3>
                 <div className="resume-item">
-                  <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                  <h5>2015 - 2016</h5>
+                  <h4>Bachelor of Science in Information Systems</h4>
+                  <h5>2025 - Present</h5>
                   <p>
-                    <em>Rochester Institute of Technology, Rochester, NY</em>
+                    <em>La Verdad Christian College, Apalit, Pampanga</em>
                   </p>
                   <p>
-                    Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
-                    iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
-                    nerada porti sand markend
+                    Currently in junior year, developing advanced knowledge in systems analysis, 
+                    programming, and business technology integration.
+                    Focused on applying technology to solve real-world problems 
+                    and pursuing growth as an Aspiring Cloud Developer.
                   </p>
                 </div>
                 {/* Edn Resume Item */}
                 <div className="resume-item">
-                  <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                  <h5>2010 - 2014</h5>
+                  <h4>Associate in Computer technology</h4>
+                  <h5>2023 - 2025</h5>
                   <p>
-                    <em>Rochester Institute of Technology, Rochester, NY</em>
+                    <em>La Verdad Christian College, Apalit, Pampanga</em>
                   </p>
                   <p>
-                    Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
-                    reiciendis et quis Eius vel ratione eius unde vitae rerum
-                    voluptates asperiores voluptatem Earum molestiae consequatur
-                    neque etlon sader mart dila
+                    Built a strong foundation in web development, networking, and computer systems. 
+                    Gained hands-on experience in technical support, programming, and system troubleshooting, 
+                    fostering adaptability and critical thinking in IT environments.
                   </p>
                 </div>
                 {/* Edn Resume Item */}
@@ -409,53 +409,44 @@ function App() {
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay={200}>
                 <h3 className="resume-title">Professional Experience</h3>
                 <div className="resume-item">
-                  <h4>Senior graphic design specialist</h4>
-                  <h5>2019 - Present</h5>
+                  <h4>Service Crew</h4>
+                  <h5>July 2025 - Present</h5>
                   <p>
-                    <em>Experion, New York, NY </em>
+                    <em>BES House of Chicken, Apalit Pampanga </em>
                   </p>
                   <ul>
                     <li>
-                      Lead in the design, development, and implementation of the
-                      graphic, layout, and production communication materials
+                      Delivered quality service in a fast-paced environment,
+                       demonstrating teamwork, adaptability, and strong communication.
                     </li>
                     <li>
-                      Delegate tasks to the 7 members of the design team and provide
-                      counsel on all aspects of the project.{" "}
+                      Managed multiple tasks efficiently, maintaining focus and composure under pressure.
                     </li>
                     <li>
-                      Supervise the assessment of all graphic materials in order to
-                      ensure quality and accuracy of the design
-                    </li>
-                    <li>
-                      Oversee the efficient use of production project budgets
-                      ranging from $2,000 - $25,000
+                      Developed a sense of discipline and responsibility, qualities t
+                      hat translate into effective collaboration and reliability in professional settings.
                     </li>
                   </ul>
                 </div>
                 {/* Edn Resume Item */}
                 <div className="resume-item">
-                  <h4>Graphic design specialist</h4>
-                  <h5>2017 - 2018</h5>
+                  <h4>Hollow Block Maker</h4>
+                  <h5>October - December 2024</h5>
                   <p>
-                    <em>Stepping Stone Advertising, New York, NY</em>
+                    <em>MCGI Engineering Department, Apalit, Pampanga</em>
                   </p>
                   <ul>
                     <li>
-                      Developed numerous marketing programs (logos,
-                      brochures,infographics, presentations, and advertisements).
+                      Performed physically demanding tasks with perseverance 
+                      and attention to detail, ensuring accuracy and consistency in production.
                     </li>
                     <li>
-                      Managed up to 5 projects or tasks at a given time while under
-                      pressure
+                      Gained experience working in a structured and 
+                      goal-oriented environment, strengthening problem-solving and time management skills.
                     </li>
                     <li>
-                      Recommended and consulted with clients on the most appropriate
-                      graphic design
-                    </li>
-                    <li>
-                      Created 4+ design presentations and proposals a month for
-                      clients and account managers
+                      Learned the value of hard work and persistence, 
+                      raits that support growth in technical and development-focused careers.
                     </li>
                   </ul>
                 </div>
