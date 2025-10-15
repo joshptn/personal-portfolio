@@ -376,7 +376,7 @@ function App() {
                     <li>jashuapatenia15@gmail.com</li>
                   </ul>
                 </div>
-                {/* Edn Resume Item */}
+                {/* End Resume Item */}
                 <h3 className="resume-title">Education</h3>
                 <div className="resume-item">
                   <h4>Bachelor of Science in Information Systems</h4>
@@ -391,7 +391,7 @@ function App() {
                     and pursuing growth as an Aspiring Cloud Developer.
                   </p>
                 </div>
-                {/* Edn Resume Item */}
+                {/* End Resume Item */}
                 <div className="resume-item">
                   <h4>Associate in Computer technology</h4>
                   <h5>2023 - 2025</h5>
@@ -404,7 +404,7 @@ function App() {
                     fostering adaptability and critical thinking in IT environments.
                   </p>
                 </div>
-                {/* Edn Resume Item */}
+                {/* End Resume Item */}
               </div>
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay={200}>
                 <h3 className="resume-title">Professional Experience</h3>
@@ -428,7 +428,7 @@ function App() {
                     </li>
                   </ul>
                 </div>
-                {/* Edn Resume Item */}
+                {/* End Resume Item */}
                 <div className="resume-item">
                   <h4>Hollow Block Maker</h4>
                   <h5>October - December 2024</h5>
@@ -454,7 +454,7 @@ function App() {
                       <br/>
                       <br/>
                       <a
-                        href="/resume.pdf"
+                        href="/RESUME.pdf"
                         download="Joshua-Pateña-Resume.pdf"
                         className="download-btn"
                         data-aos="fade-up"
@@ -465,236 +465,198 @@ function App() {
                     </li>
                   </ul>
                 </div>
-                {/* Edn Resume Item */}
+                {/* End Resume Item */}
               </div>
             </div>
           </div>
         </section>
-        {/* /Resume Section */}
+        {/* Resume Section */}
         {/* Portfolio Section */}
-        <section id="portfolio" className="portfolio section">
-          {/* Section Title */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
+<section id="portfolio" className="portfolio section">
+  {/* Section Title */}
+  <div className="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>
+      Here are some of my featured projects that reflect my skills in design and development.
+      <br/> Each project reflects my creativity, technical skill, and drive to build meaningful digital experiences.
+    </p>
+  </div>
+
+  <div className="container">
+    <div className="row gy-4" data-aos="fade-up" data-aos-delay="200">
+      
+      {/* Portfolio Item 1 */}
+      <div className="col-lg-6 col-md-6 portfolio-item">
+        <div className="portfolio-wrap">
+          <img
+            src="assets/img/masonry-portfolio/LVCIS.png"
+            className="img-fluid"
+            alt="LV CIS"
+          />
+          <div className="portfolio-info">
+            <h4>LV CIS</h4>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-              aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-              quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-              fugiat sit in iste officiis commodi quidem hic quas.
+              Club Integrated System for managing attendance, events, and memberships.
             </p>
-          </div>
-          {/* End Section Title */}
-          <div className="container">
-            <div
-              className="isotope-layout"
-              data-default-filter="*"
-              data-layout="masonry"
-              data-sort="original-order"
-            >
-              <ul
-                className="portfolio-filters isotope-filters"
-                data-aos="fade-up"
-                data-aos-delay={100}
-              >
-                <li data-filter="*" className="filter-active">
-                  All
-                </li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-product">Card</li>
-                <li data-filter=".filter-branding">Web</li>
-              </ul>
-              {/* End Portfolio Filters */}
-              <div
-                className="row gy-4 isotope-container"
-                data-aos="fade-up"
-                data-aos-delay={200}
-              >
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Product 1</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
-                      title="Product 1"
-                      data-gallery="portfolio-gallery-product"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Branding 1</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
-                      title="Branding 1"
-                      data-gallery="portfolio-gallery-branding"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 2</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
-                      title="App 2"
-                      data-gallery="portfolio-gallery-app"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Product 2</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
-                      title="Product 2"
-                      data-gallery="portfolio-gallery-product"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Branding 2</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>App 3</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
-                      title="App 3"
-                      data-gallery="portfolio-gallery-app"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Product 3</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
-                      title="Product 3"
-                      data-gallery="portfolio-gallery-product"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <img
-                    src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="portfolio-info">
-                    <h4>Branding 3</h4>
-                    <p>Lorem ipsum, dolor sit</p>
-                    <a
-                      href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      className="glightbox preview-link"
-                    >
-                      <i className="bi bi-zoom-in" />
-                    </a>
-                  </div>
-                </div>
-                {/* End Portfolio Item */}
-              </div>
-              {/* End Portfolio Container */}
+            <br/>
+            <div className="tech-stack">
+              <span>Laravel</span>
+              <span>React</span>
+              <span>TailwindCSS</span>
+              <span>XAMPP</span>
+              <span>MySQL</span>
+              <span>ShadcnUI</span>
             </div>
+            <a
+              href="https://github.com/rshdgvn/LV-CIS.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="repo-link"
+            >
+              <i className="bi bi-github"></i> Repository
+            </a>
+            <a
+              href="assets/img/masonry-portfolio/LVCIS.png"
+              title="LV CIS"
+              data-gallery="portfolio-gallery"
+              className="glightbox preview-link"
+            >
+              <i className="bi bi-zoom-in"></i>
+            </a>
           </div>
-        </section>
-        {/* /Portfolio Section */}
+        </div>
+      </div>
+
+      {/* Portfolio Item 2 */}
+      <div className="col-lg-6 col-md-6 portfolio-item">
+        <div className="portfolio-wrap">
+          <img
+            src="assets/img/masonry-portfolio/app-dates.png"
+            className="img-fluid"
+            alt="AppDates"
+          />
+          <div className="portfolio-info">
+            <h4>AppDates</h4>
+            <p>
+              A project scheduling and tracking tool with smart Kanban-style management.
+            </p>
+            <br/>
+            <div className="tech-stack">
+              <span>Laravel</span>
+              <span>Blade</span>
+              <span>TailwindCSS</span>
+              <span>XAMPP</span>
+              <span>MySQL</span>
+            </div>
+            <a
+              href="https://github.com/rshdgvn/app-dates.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="repo-link"
+            >
+              <i className="bi bi-github"></i> Repository
+            </a>
+            <a
+              href="assets/img/masonry-portfolio/app-dates.png"
+              title="AppDates"
+              data-gallery="portfolio-gallery"
+              className="glightbox preview-link"
+            >
+              <i className="bi bi-zoom-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Portfolio Item 3 */}
+      <div className="col-lg-6 col-md-6 portfolio-item">
+        <div className="portfolio-wrap">
+          <img
+            src="assets/img/masonry-portfolio/cycling-website.png"
+            className="img-fluid"
+            alt="Cycling Website"
+          />
+          <div className="portfolio-info">
+            <h4>Cycling Website</h4>
+            <p>
+              This is where I share my passion for cycling and the places and famous destination I have been.
+            </p>
+            <br/>
+            <div className="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a
+              href="https://github.com/joshptn/MyPersonalCyclingWebsite-.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="repo-link"
+            >
+              <i className="bi bi-github"></i> Repository
+            </a>
+            <a
+              href="assets/img/masonry-portfolio/cycling-website.png"
+              title="Cycling Website"
+              data-gallery="portfolio-gallery"
+              className="glightbox preview-link"
+            >
+              <i className="bi bi-zoom-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Portfolio Item 4 */}
+      <div className="col-lg-6 col-md-6 portfolio-item">
+        <div className="portfolio-wrap">
+          <img
+            src="assets/img/masonry-portfolio/note-app.png"
+            className="img-fluid"
+            alt="Note App"
+          />
+          <div className="portfolio-info">
+            <h4>Note App</h4>
+            <p>
+              A simple CRUD-based note management app designed for productivity.
+            </p>
+            <br/>
+            <div className="tech-stack">
+              <span>PHP</span>
+              <span>Laravel</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>XAMPP</span>
+              <span>MySQL</span>
+            </div>
+            <a
+              href="https://github.com/joshptn/service-class.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="repo-link"
+            >
+              <i className="bi bi-github"></i> Repository
+            </a>
+            <a
+              href="assets/img/masonry-portfolio/note-app.png"
+              title="Note App"
+              data-gallery="portfolio-gallery"
+              className="glightbox preview-link"
+            >
+              <i className="bi bi-zoom-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{/* /Portfolio Section */}
+
+
+
         {/* Services Section */}
         <section id="services" className="services section">
           {/* Section Title */}

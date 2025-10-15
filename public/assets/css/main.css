@@ -888,6 +888,124 @@ section,
   bottom: 0;
 }
 
+/* Enhanced Portfolio Card Styling */
+.portfolio .portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  background: color-mix(in srgb, var(--background-color), transparent 5%);
+}
+
+.portfolio .portfolio-wrap:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 35px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all 0.5s ease;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.portfolio .portfolio-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  bottom: 0;
+}
+
+.portfolio .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--contrast-color);
+}
+
+.portfolio .portfolio-info p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.portfolio .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.portfolio .tech-stack span {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.portfolio .tech-stack span:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 30%);
+}
+
+/* Repository Link Button */
+.portfolio .repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 30px;
+  padding: 6px 12px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.portfolio .repo-link:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+}
+
+.portfolio .repo-link i {
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.portfolio .repo-link:hover i {
+  transform: rotate(10deg);
+}
+
+.portfolio .preview-link {
+  position: inline-flex;
+  right: 15px;
+  bottom: 15px;
+  font-size: 22px;
+  color: var(--accent-color);
+  transition: color 0.3s;
+}
+
+.portfolio .preview-link:hover {
+  color: #fff;
+}
+
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
