@@ -17,6 +17,31 @@ function App() {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+  const skillSection = document.querySelector(".skills-animation");
+  const progressBars = document.querySelectorAll(".progress-bar");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          progressBars.forEach((bar) => {
+            const value = bar.getAttribute("aria-valuenow");
+            bar.style.width = value + "%";
+          });
+        }
+      });
+    },
+    { threshold: 0.5 } // triggers when 50% of section is visible
+  );
+
+  if (skillSection) observer.observe(skillSection);
+
+  return () => {
+    if (skillSection) observer.unobserve(skillSection);
+  };
+}, []);
+
 
   return (
     <>
@@ -111,10 +136,13 @@ function App() {
           <div className="container section-title" data-aos="fade-up">
             <h2>About</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-              aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-              quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-              fugiat sit in iste officiis commodi quidem hic quas.
+              My name is <span style={{fontWeight: "bold", fontSize: "1.3rem", color: "#4d5255ff" }}> Joshua Pateña </span> — 
+              an aspiring Cloud Developer driven by curiosity and a love for building systems that can handle demand gracefully.<br/> <hr/> 
+              My passion lies in building smart systems, sparking innovation, and helping businesses 
+              grow with tech-driven solutions. I blend a business-minded approach with a high-value mindset, 
+              because technology isn’t just about lines of code, it’s about creating real-world impact.
+              Whether it’s architecting in the cloud, streamlining processes, or turning bold ideas into reality, 
+              I’m here to make it happen.
             </p>
           </div>
           {/* End Section Title */}
@@ -128,10 +156,9 @@ function App() {
                 />
               </div>
               <div className="col-lg-8 content">
-                <h2>UI/UX Designer &amp; Web Developer.</h2>
+                <h2>Aspiring Cloud Developer</h2>
                 <p className="fst-italic py-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  I am the kind of programmer who don't code… I architect solutions.
                 </p>
                 <div className="row">
                   <div className="col-lg-6">
@@ -146,218 +173,176 @@ function App() {
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />{" "}
-                        <strong>Phone:</strong> <span>+123 456 7890</span>
+                        <strong>Phone:</strong> <span>+63 935 636 3607</span>
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" /> <strong>City:</strong>{" "}
-                        <span>New York, USA</span>
+                        <span>Apalit, Pampanga</span>
                       </li>
                     </ul>
                   </div>
                   <div className="col-lg-6">
                     <ul>
                       <li>
-                        <i className="bi bi-chevron-right" /> <strong>Age:</strong>{" "}
-                        <span>30</span>
+                        <i className="bi bi-chevron-right" /> <strong>Status:</strong>{" "}
+                        <span>ACT Student / Graduate / Ongoing Learner</span>
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />{" "}
-                        <strong>Degree:</strong> <span>Master</span>
+                        <strong>Degree:</strong> <span>Associate</span>
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />{" "}
-                        <strong>Email:</strong> <span>email@example.com</span>
+                        <strong>Email:</strong> <span>jashuapatenia15@gmail.com</span>
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />{" "}
-                        <strong>Freelance:</strong> <span>Available</span>
+                        <strong>Interest:</strong> <span>AI • Automation • Cloud Infrastructure</span>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <p className="py-3">
-                  Officiis eligendi itaque labore et dolorum mollitia officiis optio
-                  vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-                  incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
-                  maxime officiis quidem quia. Sed et consectetur qui quia
-                  repellendus itaque neque.
+                  “Anyone can build an app. 
+                  But building one that scales, adapts, and thrives in the cloud — 
+                  that’s where innovation begins.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        {/* /About Section */}
-        {/* Stats Section */}
-        <section id="stats" className="stats section">
-          <div className="container" data-aos="fade-up" data-aos-delay={100}>
-            <div className="row gy-4">
-              <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                <i className="bi bi-emoji-smile" />
-                <div className="stats-item">
-                  <span
-                    data-purecounter-start={0}
-                    data-purecounter-end={232}
-                    data-purecounter-duration={1}
-                    className="purecounter"
-                  />
-                  <p>Happy Clients</p>
-                </div>
-              </div>
-              {/* End Stats Item */}
-              <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                <i className="bi bi-journal-richtext" />
-                <div className="stats-item">
-                  <span
-                    data-purecounter-start={0}
-                    data-purecounter-end={521}
-                    data-purecounter-duration={1}
-                    className="purecounter"
-                  />
-                  <p>Projects</p>
-                </div>
-              </div>
-              {/* End Stats Item */}
-              <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                <i className="bi bi-headset" />
-                <div className="stats-item">
-                  <span
-                    data-purecounter-start={0}
-                    data-purecounter-end={1463}
-                    data-purecounter-duration={1}
-                    className="purecounter"
-                  />
-                  <p>Hours Of Support</p>
-                </div>
-              </div>
-              {/* End Stats Item */}
-              <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-                <i className="bi bi-people" />
-                <div className="stats-item">
-                  <span
-                    data-purecounter-start={0}
-                    data-purecounter-end={15}
-                    data-purecounter-duration={1}
-                    className="purecounter"
-                  />
-                  <p>Hard Workers</p>
-                </div>
-              </div>
-              {/* End Stats Item */}
-            </div>
-          </div>
-        </section>
-        {/* /Stats Section */}
-        {/* Skills Section */}
+        {/* Strenghts and Skills Section */}
         <section id="skills" className="skills section">
-          {/* Section Title */}
           <div className="container section-title" data-aos="fade-up">
-            <h2>Skills</h2>
-            <p>
-              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-              consectetur velit
+            <h2>Strengths and Skills</h2>
+            <p className="fst-italic py-3">
+              “Driven by curiosity, powered by creativity, defined by impact.”
             </p>
           </div>
-          {/* End Section Title */}
+
           <div className="container" data-aos="fade-up" data-aos-delay={100}>
             <div className="row skills-content skills-animation">
               <div className="col-lg-6">
                 <div className="progress">
                   <span className="skill">
-                    <span>HTML</span> <i className="val">100%</i>
+                    <span>Web Development </span> <i className="val">85%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={100}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
-                {/* End Skills Item */}
                 <div className="progress">
                   <span className="skill">
-                    <span>CSS</span> <i className="val">90%</i>
+                    <span>UI/UX Awareness</span> <i className="val">82%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={90}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
+                      aria-valuenow="82"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
-                {/* End Skills Item */}
                 <div className="progress">
                   <span className="skill">
-                    <span>JavaScript</span> <i className="val">75%</i>
+                    <span>Front-End Creativity</span> <i className="val">80%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={75}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
-                {/* End Skills Item */}
+                <div className="progress">
+                  <span className="skill">
+                    <span>Problem Solving & Debugging</span> <i className="val">80%</i>
+                  </span>
+                  <div className="progress-bar-wrap">
+                    <div
+                      className="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
               </div>
+
               <div className="col-lg-6">
                 <div className="progress">
                   <span className="skill">
-                    <span>PHP</span> <i className="val">80%</i>
+                    <span>Publing Speaking & Delivery</span> <i className="val">88%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={80}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
+                      aria-valuenow="88"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
-                {/* End Skills Item */}
                 <div className="progress">
                   <span className="skill">
-                    <span>WordPress/CMS</span> <i className="val">90%</i>
+                    <span>Teamwork & Collaboration</span> <i className="val">90%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={90}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
-                {/* End Skills Item */}
                 <div className="progress">
                   <span className="skill">
-                    <span>Photoshop</span> <i className="val">55%</i>
+                    <span>Curiosity & Willingness to Learn</span> <i className="val">95%</i>
                   </span>
                   <div className="progress-bar-wrap">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      aria-valuenow={55}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
-                {/* End Skills Item */}
+                <div className="progress">
+                  <span className="skill">
+                    <span>Perseverance & Discipline</span> <i className="val">98%</i>
+                  </span>
+                  <div className="progress-bar-wrap">
+                    <div
+                      className="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="98"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        {/* /Skills Section */}
+        {/* /Strengths and Skills Section */}
         {/* Resume Section */}
         <section id="resume" className="resume section">
           {/* Section Title */}
