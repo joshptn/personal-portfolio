@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   useEffect(() => {
@@ -10,47 +11,63 @@ function App() {
     });
   }, []);
 
+    const [isOpen, setIsOpen] = useState(false);
+
+  const toggleHeader = () => {
+    setIsOpen(!isOpen);
+  };
+
+
   return (
     <>
+      {/* Header Section */}
       <header
         id="header"
-        className="header d-flex flex-column justify-content-center"
+        className={`header d-flex flex-column justify-content-center ${
+          isOpen ? "header-show" : ""
+        }`}
       >
-        <i className="header-toggle d-xl-none bi bi-list" />
+        <i
+          className={`header-toggle d-xl-none bi ${
+            isOpen ? "bi-x" : "bi-list"
+          }`}
+          onClick={toggleHeader}
+        ></i>
+
         <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <a href="#hero" className="active">
+              <a href="#hero" className="active" onClick={() => setIsOpen(false)}>
                 <i className="bi bi-house navicon" />
                 <span>Home</span>
               </a>
             </li>
             <li>
-              <a href="#about">
+              <a href="#about" onClick={() => setIsOpen(false)}>
                 <i className="bi bi-person navicon" />
                 <span>About</span>
               </a>
             </li>
             <li>
-              <a href="#resume">
+              <a href="#resume" onClick={() => setIsOpen(false)}>
                 <i className="bi bi-file-earmark-text navicon" />
                 <span>Resume</span>
               </a>
             </li>
             <li>
-              <a href="#portfolio">
+              <a href="#portfolio" onClick={() => setIsOpen(false)}>
                 <i className="bi bi-images navicon" />
                 <span>Portfolio</span>
               </a>
             </li>
             <li>
-              <a href="#services">
+              <a href="#services" onClick={() => setIsOpen(false)}>
                 <i className="bi bi-hdd-stack navicon" />
                 <span>Services</span>
               </a>
             </li>
             <li>
-              <a href="#contact">
+              <a href="#contact" onClick={() => setIsOpen(false)}>
                 <i className="bi bi-envelope navicon" />
                 <span>Contact</span>
               </a>
@@ -61,35 +78,25 @@ function App() {
       <main className="main">
         {/* Hero Section */}
         <section id="hero" className="hero section light-background">
-          <img src="assets/img/hero-bg.jpg" alt="" />
+          <img src="assets/img/hero-bg.jfif" alt="" />
           <div className="container" data-aos="zoom-out">
             <div className="row justify-content-center">
               <div className="col-lg-9">
-                <h2>Brandon Johnson</h2>
+                <h2>Joshua Pateña</h2>
                 <p>
-                  I'm{" "}
-                  <span
-                    className="typed"
-                    data-typed-items="Designer, Developer, Freelancer, Photographer"
-                  >
-                    Designer
-                  </span>
-                  <span
-                    className="typed-cursor typed-cursor--blink"
-                    aria-hidden="true"
-                  />
+                  Aspiring Cloud Developer
                 </p>
                 <div className="social-links">
-                  <a href="#">
+                  <a href="https://x.com/juswant2beyours">
                     <i className="bi bi-twitter-x" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.facebook.com/juswanabeyours">
                     <i className="bi bi-facebook" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/joshptn">
                     <i className="bi bi-instagram" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/joshua-patenia-714727346">
                     <i className="bi bi-linkedin" />
                   </a>
                 </div>
@@ -131,11 +138,11 @@ function App() {
                     <ul>
                       <li>
                         <i className="bi bi-chevron-right" />{" "}
-                        <strong>Birthday:</strong> <span>1 May 1995</span>
+                        <strong>Birthday:</strong> <span>12 September 2003</span>
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />{" "}
-                        <strong>Website:</strong> <span>www.example.com</span>
+                        <strong>Hobby:</strong> <span>Cycling</span>
                       </li>
                       <li>
                         <i className="bi bi-chevron-right" />{" "}
