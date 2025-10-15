@@ -466,7 +466,7 @@ function App() {
                     <br/>
                     <br/>
                     <a
-                      href="/RESUME.pdf"
+                      href="./RESUME.pdf"
                       download="Joshua-Pateña-Resume.pdf"
                       className="download-btn"
                       data-aos="fade-up"
