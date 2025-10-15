@@ -86,7 +86,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#teck stack" onClick={() => setIsOpen(false)}>
+              <a href="#tech stack" onClick={() => setIsOpen(false)}>
                 <i className="bi bi-layers" />
                 <span>Tech Stack </span>
               </a>
@@ -660,7 +660,7 @@ function App() {
         </section>
         {/* /Portfolio Section */}
         {/* Tech Stack / Skills Section */}
-        <section id="techstack" className="services section">
+        <section id="tech stack" className="services section">
           {/* Section Title */}
           <div className="container section-title" data-aos="fade-up">
             <h2>Tech Stack</h2>
