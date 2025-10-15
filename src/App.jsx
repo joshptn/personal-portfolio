@@ -74,6 +74,12 @@ function App() {
               </a>
             </li>
             <li>
+              <a href="#skills" onClick={() => setIsOpen(false)}>
+                <i className="bi bi-award navicon" />
+                <span>Skills</span>
+              </a>
+            </li>
+            <li>
               <a href="#resume" onClick={() => setIsOpen(false)}>
                 <i className="bi bi-file-earmark-text navicon" />
                 <span>Resume</span>
@@ -211,10 +217,10 @@ function App() {
             </div>
           </div>
         </section>
-        {/* Strenghts and Skills Section */}
+        {/* Skills Section */}
         <section id="skills" className="skills section">
           <div className="container section-title" data-aos="fade-up">
-            <h2>Strengths and Skills</h2>
+            <h2>Skills</h2>
             <p className="fst-italic py-3">
               “Driven by curiosity, powered by creativity, defined by impact.”
             </p>
