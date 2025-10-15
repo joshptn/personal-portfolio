@@ -448,6 +448,21 @@ function App() {
                       Learned the value of hard work and persistence, 
                       raits that support growth in technical and development-focused careers.
                     </li>
+                    <li>
+                      Feel free to download my resume to explore my full experience and skills 
+                      and learn more about my journey and what I can bring to your team.
+                      <br/>
+                      <br/>
+                      <a
+                        href="/resume.pdf"
+                        download="Joshua-Pateña-Resume.pdf"
+                        className="download-btn"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                      >
+                        <i className="bi bi-download"></i> Download Resume
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 {/* Edn Resume Item */}

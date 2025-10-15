@@ -757,6 +757,37 @@ section,
 }
 
 /*--------------------------------------------------------------
+#  Resume Download Button
+--------------------------------------------------------------*/
+.download-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 50px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  font-weight: 600;
+  font-family: var(--heading-font);
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.download-btn i {
+  font-size: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.download-btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+
+/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
